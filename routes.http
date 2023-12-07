@@ -1,0 +1,29 @@
+POST http://localhost:3333/livro
+Content-Type: application/json
+
+{
+    "titulo": "Livro 01",
+    "autor": "Autor 01",
+    "npaginas": 450
+}
+
+###
+GET http://localhost:3333/livro
+
+###
+GET http://localhost:3333/livro?search=Reputation
+
+###
+
+PUT  http://localhost:3333/livro/3042047f-2d73-4467-85a3-3e187af0e22f
+Content-Type: application/json
+
+{
+    "titulo": "Livro: Reputation",
+    "autor": "Autor: Taylordiva",
+    "npaginas": 450
+}
+
+###
+
+DELETE http://localhost:3333/livro/fafdfb73-621c-4012-95f3-d42ed57513ad
